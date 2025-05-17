@@ -1,5 +1,5 @@
 import unittest
-from app import add, subtract, greet
+from app import add, subtract, divide, greet
 
 class TestApp(unittest.TestCase):
 
@@ -14,6 +14,15 @@ class TestApp(unittest.TestCase):
 
   def test_subtract_negative_numbers(self):
     self.assertEqual(subtract(-5, -2), -3)
+
+  def test_divide_positive_numbers(self):
+    self.assertEqual(divide(10, 2), 5)
+
+  def test_divide_negative_numbers(self):
+    self.assertEqual(divide(-10, -2), 5)
+
+  def test_divide_by_zero(self):
+    self.assertEqual(divide(10, 0), "Error: Cannot divide by zero.")
 
   def test_greet_with_name(self):
     self.assertEqual(greet("Alice"), "Hello, Alice!")
