@@ -1,9 +1,9 @@
 import unittest
-<<<<<<< HEAD
+HEAD
 from app import add, subtract, greet
 =======
 from app import add, subtract, greet, multiply
->>>>>>> 1b571d0 (Feature: Added Multiplication)
+1b571d0 (Feature: Added Multiplication)
 
 class TestApp(unittest.TestCase):
 
@@ -25,10 +25,10 @@ class TestApp(unittest.TestCase):
   def test_greet_with_empty_name(self):
     self.assertEqual(greet(""), "Hello, !")
 
-<<<<<<< HEAD
+HEAD
 if __name__ == '__main__':
   unittest.main()
-=======
+
   def test_multiply_positive_numbers(self):
     self.assertEqual(multiply(3, 4), 12)
 
@@ -43,4 +43,4 @@ if __name__ == '__main__':
 
 if __name__ == '__main__':
   unittest.main()
->>>>>>> 1b571d0 (Feature: Added Multiplication)
+1b571d0 (Feature: Added Multiplication)
